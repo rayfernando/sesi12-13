@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Data</title>
+</head>
+<body>
+    <h3>Hapus Data</h3>
+    <form>
+        <div>
+            Nama Lengkap
+                <input type="text" id="nama">
+        </div>
+        <div>
+            Email
+            <input type="text" id="email">
+        </div>
+        
+        <div id="tombol">
+            <button type="button" onclick="deldata"()"> Hapus Data</button>
+        </div>
+    </form>
+    <script>
+        let iduser = (getparam("id"));
+        function getparam(cx){
+            const querystring = window.location.search;
+            const USP = new URLSearchParams(querystring)
+            return USP.get(cx);
+        }
+        function deldata(){
+
+        }
+    </script>
+</body>
+</html>
